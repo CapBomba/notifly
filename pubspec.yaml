@@ -1,0 +1,60 @@
+name: notifly
+description: "A real-time chat and notification platform — Supabase + FCM + Riverpod + Drift."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State management
+  flutter_riverpod: ^3.0.0
+
+  # Supabase — auth, database, realtime
+  supabase_flutter: ^2.8.4
+
+  # Google Sign-In (OAuth via Supabase)
+  google_sign_in: ^6.2.2
+
+  # Firebase — FCM push delivery ONLY (no Firebase DB / auth)
+  firebase_core: ^3.13.0
+  firebase_messaging: ^15.2.5
+
+  # Offline persistence
+  drift: ^2.35.0
+  drift_flutter: ^0.3.1
+  path_provider: ^2.1.6
+
+  # Local notifications (foreground display + FCM notification tap)
+  flutter_local_notifications: ^18.0.1
+  timezone: ^0.9.4
+
+  # Utilities
+  uuid: ^4.5.1
+  intl: ^0.20.2
+  equatable: ^2.0.7
+  logger: ^2.5.0
+  cached_network_image: ^3.4.1
+  cupertino_icons: ^1.0.8
+  http: ^1.2.2
+
+  # Image picker & Permissions
+  image_picker: ^1.1.2
+  permission_handler: ^11.3.1
+
+  # LiveKit WebRTC Audio & Video Calls
+  livekit_client: ^2.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  build_runner: ^2.4.15
+  drift_dev: ^2.35.0
+
+flutter:
+  uses-material-design: true
